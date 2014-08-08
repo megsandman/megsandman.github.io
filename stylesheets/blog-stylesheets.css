@@ -47,7 +47,7 @@ body {
 }
 
 .posttext {
-    font-size: 0.8em;
+ font-size: 0.8em;
 }
 
 IMG.displayed {
@@ -59,3 +59,10 @@ IMG.displayed {
 
 }
 
+a:link {
+  color:#6600CC;
+}
+
+a:visited {
+  color:black;
+}
