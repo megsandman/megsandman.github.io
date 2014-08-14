@@ -60,12 +60,11 @@ a {
 #header {
   height: 70px;
   background-color: green;
-
 }
 
 #content {
-float:right;
-margin-right:5%;
+  float:right;
+  margin-right:5%;
 }
 
 #side-a {
@@ -80,17 +79,22 @@ p {
   max-width: 100%;
 }
 ul li a {
-
-    color: yellow;
+  color: yellow;
 }
+
+.reflection {
+  float:right;
+  margin-right:5%;
+  width: 68%;
+}
+
 }
 
 @media screen and (max-width: 768px) {
 
 #wrapper {
   width: 100%;
-    font-size: 1.5em;
-
+  font-size: 1.5em;
 }
 
 #header {
@@ -115,21 +119,25 @@ p {
   margin-right:5%;
 }
 
+.reflection {
+  float:right;
+  margin-right:5%;
+  width: 68%;
+}
+
 }
 
 @media screen and (max-width: 480px) {
 
 #wrapper {
   width: 100%;
-    font-size: 1.25em;
-
+  font-size: 1.25em;
 }
 
 #header {
   height: 50px;
   background-color: blue;
   margin: 0 0 5px 0;
-
 }
 
 #side-a {
@@ -148,15 +156,24 @@ p {
 }
 
 #content {
-    margin: 0 2.5% 0 2.5%;
-    width: 95%;
+  margin: 0 2.5% 0 2.5%;
+  width: 95%;
 }
-#side-a ul li {
-    display: inline-block;
-    margin-right:3%;
 
+#side-a ul li {
+  display: inline-block;
+  margin-right:3%;
 }
+
 #side-a li{
   padding-top: 2px;
 }
+
+.reflection {
+  margin: 0 2.5% 0 2.5%;
+  width: 95%;
 }
+
+}
+
+
