@@ -1,0 +1,27 @@
+/* include your css here */
+
+html {background-color: purple;}
+
+h1{color: red;}
+
+     img{
+      float: left;
+     margin-left: 10px;
+     width: 130px;
+     }
+
+     #text{
+      float: right;
+     margin-left: 10px;
+     width: 300px;
+     padding-top: 10px;}
+
+      #bottomtext{
+     clear:both;
+     text-align: left;
+     padding-top: 30px;}
+
+     #footer{
+    clear:both;
+     text-align: center;
+     padding-top: 30px;}
