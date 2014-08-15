@@ -1,13 +1,14 @@
 body {
   background-color: white;
   color: #444444;
-  font-family:Arial, sans-serif;
+  font-family: 'Arvo', serif;
+
   }
 
 #header {
   background-color: #fff;
   text-align: center;
-  font-family:Arial, sans-serif;
+  font-family: 'Arvo', serif;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 70%;
