@@ -33,7 +33,7 @@ body {
   font-style:italic;
 }
 
-#textbody {
+.textbody {
 
   border: 1px solid #444444;
   width: 70%;
@@ -44,12 +44,12 @@ body {
 
   }
 
-#posttitle {
+.posttitle {
   font-size: 1.5em;
   font-weight: bold;
 }
 
-#postdate {
+.postdate {
   font-size: 1em;
 }
 

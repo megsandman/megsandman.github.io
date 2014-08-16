@@ -1,0 +1,51 @@
+#fixed-top {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #fff;
+}
+
+#fixed-top ul {
+  list-style-type: none;
+  margin:0 auto 0 auto;
+  padding-left:30px;
+}
+
+.headerbuttons {
+  display: inline-block;
+  margin-right: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 10px 0 10px;
+}
+
+.headerbuttons a {
+  text-decoration: none;
+}
+
+.headerbuttons a:hover {
+  color: #7519D1;
+}
+
+#M {
+  font-size: 2.5em;
+}
+
+#header {
+  margin: 70px auto 30px;
+}
+
+.textbody {
+  margin-bottom: 30px;
+}
+
+.title-link {
+  text-decoration: none;
+    color: #7519D1;
+
+}
+
+.title-link a:hover {
+  color: #7519D1;
+}
