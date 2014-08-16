@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <title>
+      Meg Makes
+    </title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-index-stylesheet.css"/>
+  </head>
+
+  <body>
+    <div id="fixed-top">
+      <ul>
+        <li class="headerbuttons"><a href="../megsandman.github.io/index.html">Home</a></li>
+        <li class="headerbuttons"><a href="../megsandman.github.io/projects.html">Projects</a></li>
+        <li class="headerbuttons" id="M">M</li>
+        <li class="headerbuttons"><a href="blog-index.html">Blog</a></li>
+        <li class="headerbuttons"><a href="mailto:margaret.sandman@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="header">
+      <p><span id="topheader"><span class="firstletter">M</span>EG <span class="firstletter">M</span>AKES</span><br><span id="bottomheader">Drinking from the web development fire hose at Dev Bootcamp.</span></p>
+    </div>
+
+    <div class="textbody">
+      <p><span class="posttitle">Tech talk: positioning elements in CSS.</span><br><span class="postdate">August 15, 2014</span></p>
+      <p class="posttext">When I started Phase 0 of Dev Bootcamp (DBC), I didn't know anything about front-end web development. I had made a few edits to the html tags on a Blogger site I used to keep but beyond that, I wouldn't have known where to start in creating a web page. Fast forward two weeks, and I've built <a href="http://megsandman.github.io/index.html">my own website</a>, including this blog, from scratch using HTML and CSS. For those who are unfamiliar (like I was before DBC), HTML is used to put all the elements (like images or this text) on the page while CSS is used to position and style these elements.</p>
+
+      <p class="posttext">Positioning elements has been one of the hardest concepts for me to grasp. Getting each piece of text and each border in the exact right spot was a character-building experience. Tears may have been shed. So how does positioning work in CSS? I’m so glad you asked. Let me give a quick overview.</p>
+
+      <p class="posttext">By default, elements are given a static position. If you don't tell them where to go, they will fall on the page in the order in which they are written in the HTML document, one right after another. If you only have one element on the page, say a red square, it will plop itself in the upper left corner of the page. As you add more elements (or red squares) to a page, they will continue to line up horizontally, moving down to the next line once the top line is full.</p>
+
+      <p class="posttext">There are three types of positioning that can be applied: relative, absolute, and fixed. With relative positioning, you move the element relative to where it would have fallen if it had no positioning applied and had the default static position. You can apply positioning attributes to move the element around. For example, if I add top: 10px, the element will be shifted down 10 pixels from where the element would have normally fallen because I've added a 10 pixel margin to the top of the element. If I do not add any positioning attributes (e.g. I don't tell the element to move up, down, right, or left) then the element will remain in it's default position.</p>
+
+      <p class="posttext">With relative positioning, placement of an element is still dependent on the flow of all elements within the document. You are moving an element relative to where it would have fallen. Absolute positioning takes the element out of this flow and allows you to place it anywhere on the page. Like with the relative position, you use positioning attributes on the top, bottom, right, and left to adjust the location, but in this case you are adjusting it relative to either the top of the page or the element's parent. An element's parent is the element that contains that element. For example, the parent element of this paragraph of text is the rectangular container that outlines this blog post. Absolute positioning allows me to decide where this paragraph is displayed relative to the position of this container. If an element does not have a parent element or if the parent element has a static position, then absolute positioning allows you to to move the element relative to the top left of the page.</p>
+
+      <p class="posttext">Finally, the fixed position locks an element in a specific spot on the page, even when you move up and down the page. Keep your eye on the navigation bar at the top of the page and scroll down. See how it stays in place while the "Meg Makes" and the top of the post flow up underneath it? This happens because the navigation bar has a fixed position - it is anchored to that spot and will not move at all.</p>
+
+    </div>
+
+    <footer>
+      <p>Comments or thoughts? I'd love to hear them: <a href="mailto:margaret.sandman@gmail.com">margaret.sandman@gmail.com</a>.</p></span></p>
+    </footer>
+
+  </body>
+</html>
