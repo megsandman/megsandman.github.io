@@ -49,9 +49,7 @@ header ul {
 
 #meg-pic {
   float: left;
-  margin: 10px auto 10px auto;
-  padding: 3% 3% 3% 3%;
-  border: 1px solid blue;
+  margin: 35px 0 0 30px;
   width: 35%;
 }
 
@@ -59,7 +57,6 @@ header ul {
   float: right;
   width: 50%;
   padding: 0 3% 3% 3%;
-  border: 1px solid green;
 }
 
 #name {
