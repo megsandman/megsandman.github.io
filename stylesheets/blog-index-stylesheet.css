@@ -55,3 +55,14 @@
   max-width: 100%;
   border: 1px solid grey;
 }
+
+#pair-comic {
+  margin: 20px auto 0 auto;
+  max-width: 100%;
+  border: 1px solid grey;
+}
+
+#comic-caption {
+  text-align: center;
+  font-size: 0.7em;
+}
