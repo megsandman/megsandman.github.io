@@ -42,10 +42,16 @@
 
 .title-link {
   text-decoration: none;
-    color: #7519D1;
+    color: #444444;
 
 }
 
 .title-link a:hover {
   color: #7519D1;
+}
+
+#responsive-webpage {
+  margin: 20px auto 20px auto;
+  max-width: 100%;
+  border: 1px solid grey;
 }
