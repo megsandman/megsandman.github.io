@@ -73,3 +73,8 @@
   display: block;
 
 }
+
+.read_more {
+  font-size: 1em;
+ font-style: italic;
+}
