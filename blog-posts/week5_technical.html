@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <title>
+      Meg Makes
+    </title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-index-stylesheet.css"/>
+  </head>
+
+  <body>
+    <div id="fixed-top">
+      <ul>
+        <li class="headerbuttons"><a href="../index.html">Home</a></li>
+        <li class="headerbuttons"><a href="../projects.html">Projects</a></li>
+        <li class="headerbuttons" id="M">M</li>
+        <li class="headerbuttons"><a href="blog-index.html">Blog</a></li>
+        <li class="headerbuttons"><a href="mailto:margaret.sandman@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="header">
+      <p><span id="topheader"><span class="firstletter">M</span>EG <span class="firstletter">M</span>AKES</span><br><span id="bottomheader">Drinking from the web development fire hose at Dev Bootcamp.</span></p>
+    </div>
+
+    <div class="textbody">
+      <p><span class="posttitle">Tech talk: Building a new Ruby class.</span><br><span class="postdate">September 5, 2014</span></p>
+
+      <p class="posttext">As I touched on in last week&#39;s technical post, Ruby is an object oriented language and each object belongs to a class. Classes are like a blueprint for objects - they group together attributes and actions (or methods) allowing you to easily create a large number of new objects that behave in the same way.</p>
+
+      <p class="posttext">To expand further on how classes work, let&#39;s walk through the process of creating our own class - a class of dogs called Dog. To make each dog object we will need it&#39;s name, age, and favorite treat. These pieces of information are each required to make a new Dog object and are called arguments. We initiate the class definition with the word class and then the name of our class (Dog in this case) and close the class definition with the word end, with all information about the class and the actions its objects can take going in between.</p>
+
+      <img class="code_snipits" src="../imgs/week5t1.png" />
+
+      <p class="posttext">Above we create brie, an instance of the Dog class (and also my parents&#39; very adorable, very old yellow lab). You can see that each time we want to create a new instance we write Dog.new and then include the three arguments (name, age, and favorite treat) in the parentheses that follow. Inside the class definition we define the initialize method. While the .new creates the new instance of the class, the initialize method gives the instance all of it&#39;s unique characteristics by assigning instance variables to each of the arguments. Instance variables begin with an @ and represent information specific to that instance of the class. </p>
+
+      <p class="posttext">Now that we have created brie, our first instance of the Dog class, let&#39;s give her something to do! To start, we can define a method in Dog that will age the Dog object that calls it by one year:</p>
+
+      <img class="code_snipits" src="../imgs/week5t2.png" />
+
+      <p class="posttext">one_year_older is what is called an instance method. This means that it is a method that can be called on any instance of the Dog class but it cannot be called on non-Dog objects - the computer won&#39;t know what to do if you try that and will give you an error. In one_year_older we increment the instance variable @age by one and then print out a short message with Brie&#39;s age. Calling the one_year_older method on brie a second time increments her age by one year again.</p>
+
+      <p class="posttext">What if Brie has discovered that while lettuce ribs are great, they aren&#39;t nearly as delicious as string cheese? We can write another method that will allow us to to update the @fave_treat variable: </p>
+
+      <img class="code_snipits" src="../imgs/week5t3.png" />
+
+
+      <p class="posttext">First we define a method get_fave_treat that simply prints out the name of Brie&#39;s favorite treat. We then define a second method update_fave_treat that takes one argument: new_fave_treat. In order for the computer to update Brie&#39;s favorite treat, it needs to know what her new favorite treat is. You can see both methods in action above. We first call the get_fave_treat method to see that Brie&#39;s current favorite treat is lettuce ribs. We then call the update_fave_treat method to update her favorite treat to string cheese. Finally, we call the get_fave_treat method again to show that we have successfully updated Brie&#39;s favorite treat.</p>
+
+      <p class="posttext">There&#39;s so much more we could do with the Dog class - like create more Dog object so that Brie has friends to play with, add additional variables that keep track of more information about Brie, and write additional methods that interact with the Dog objects. Can you create a Dog object for your own dog (or the dog you wish you had)?</p>
+
+
+
+    </div>
+
+    <footer>
+      <p>Comments or thoughts? I'd love to hear them: <a href="mailto:margaret.sandman@gmail.com">margaret.sandman@gmail.com</a>.</p></span></p>
+    </footer>
+
+  </body>
+</html>
