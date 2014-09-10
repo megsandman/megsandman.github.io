@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <title>
+      Meg Makes
+    </title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheets.css"/>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/blog-index-stylesheet.css"/>
+  </head>
+
+  <body>
+    <div id="fixed-top">
+      <ul>
+        <li class="headerbuttons"><a href="../index.html">Home</a></li>
+        <li class="headerbuttons"><a href="../projects.html">Projects</a></li>
+        <li class="headerbuttons" id="M">M</li>
+        <li class="headerbuttons"><a href="blog-index.html">Blog</a></li>
+        <li class="headerbuttons"><a href="mailto:margaret.sandman@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="header">
+      <p><span id="topheader"><span class="firstletter">M</span>EG <span class="firstletter">M</span>AKES</span><br><span id="bottomheader">Drinking from the web development fire hose at Dev Bootcamp.</span></p>
+    </div>
+
+    <div class="textbody">
+      <p><span class="posttitle">Tech talk: Class methods v. instance methods</span><br><span class="postdate">September 10, 2014</span></p>
+
+      <p class="posttext">In <a href="week5_technical.html">last week&#39;s technical post</a>, we built our own Ruby class Dog. In addition to giving each Dog object certain characteristics, the class defined several actions that can be performed by each instance of the class such as aging the dog a year through the method one_year_older or updating the dog&#39;s favorite treat with the method update_fave_treat. one_year_older and update_fave_treat are both instance methods - they are performed by one particular instance of the class.</p>
+
+      <p class="posttext">In addition to instance methods, we can also define class methods, which send messages to the class itself rather than to the instances of the class.  It&#39;s important to remember that classes are objects as well, and this is why they can have their own methods. As described in <a href="http://www.manning.com/black3/" target="_blank">The Well Grounded Rubyist</a>: &quot;A class object has its own methods, its own state, and its own identity. It doesn&#39;t share these things with instances of itself.&quot; If you try calling a class method on an instance of the class, the computer will give you an error message.</p>
+      <p class="posttext">How do you know when to use a class method? Think about the object to which you are trying to send the message. In the case of one_year_older, we want to age one particular dog by one year, not all dogs by one year, so we are sending the age by one year message to an instance of the Dog class. Let&#39;s say we wanted to find the oldest Dog object that has been created by defining the method oldest. To do this, we need to look across multiple instances of the Dog class rather than just one particular instance so oldest would be a class method. Any method that is elevated from just one particular instance should be a class method rather than an instance method</p>
+
+      <img class="code_snipits" src="../imgs/week6t1.png" />
+
+      <p class="posttext">The class method definition looks very similar to the instance method definition with one exception: the class name is included before the method name followed by a period. The class method oldest takes Dog objects as it&#39;s argument. The asterisk before the word dogs indicates that the method is flexible in terms of the number of arguments it takes - it can handle as many or as few dog objects as you would like to search through. Inside the method we call the max_by method on the Dog objects to find the instance with the maximum age. Let&#39;s test out the oldest method:</p>
+
+      <img class="code_snipits" src="../imgs/week6t2.png" />
+
+      <p class="posttext">First, we create to Dog objects, brie and luna. We then call the oldest method on the Dog class with brie and luna as the arguments. Since at 13 years brie is older than 4 year old luna, the brie object is returned. If we call the oldest method without any arguments, nil is returned.</p>
+
+
+      <p class="posttext"></p>
+
+
+    </div>
+
+    <footer>
+      <p>Comments or thoughts? I'd love to hear them: <a href="mailto:margaret.sandman@gmail.com">margaret.sandman@gmail.com</a>.</p></span></p>
+    </footer>
+
+  </body>
+</html>
