@@ -50,6 +50,13 @@
 
       <p class="posttext">There&#39;s so much more we could do with the Dog class - like create more Dog object so that Brie has friends to play with, add additional variables that keep track of more information about Brie, and write additional methods that interact with the Dog objects. Can you create a Dog object for your own dog (or the dog you wish you had)?</p>
 
+      <p class="posttext">UPDATE: In the week following this post, we learned about attr family of methods and how they can be used as shortcuts when creating reader and writer methods in a class. Reader methods (like get_fave_treat) simply return the value of an instance variable while writer methods (like update_fave_treat) allow you to set a new value for an instance variable. These methods allow you to take a three line method definition and cut it down to one line. </p>
+
+      <img class="code_snipits" src="../imgs/week5t4.png" />
+
+      <p class="posttext">Better still, if we wanted to create writer methods for multiple instance variables, we could do that in the same line by separating the variables by commas. In addition to attr_reader and attr_writer, which create reader and writer methods respectively, ruby has the attr_accessor method, which creates both a reader and writer method for the variable specified. You can read more about the attr family of methods in the Ruby Documentation.</p>
+
+      <p class="posttext">I have updated the original code for the Dog class to make use of these methods and  have included both the original code the refactored code in my GitHub repository <a href="https://github.com/megsandman/megsandman.github.io/blob/master/blog-posts/week5_technical_code.rb">here</a?.</p>
 
 
     </div>
