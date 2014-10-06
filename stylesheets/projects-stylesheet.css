@@ -3,12 +3,14 @@
 }
 
 #project-title {
-  font-size: 1.2 em;
+  font-size: 1.3em;
 }
 
 #projects-text {
     margin: 0 20px 0 20px;
     font-size: 1em;
+    position: relative;
+    bottom: -4px;
 }
 
 ul {
