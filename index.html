@@ -1,42 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
-    <title>
-      Meg Sandman
-    </title>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/index-stylesheet.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meg Sandman.</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/application.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
   </head>
-
-  <body id="wrapper">
-    <header>
-      <ul>
-        <li class="headerbuttons"><a href="#">Home</a></li>
-        <li class="headerbuttons"><a href="projects.html">Projects</a></li>
-        <li class="headerbuttons" id="M">M</li>
-        <li class="headerbuttons"><a href="../blog-posts/blog-index.html" target="_blank">Blog</a></li>
-        <li class="headerbuttons"><a href="mailto:margaret.sandman@gmail.com">Contact</a></li>
-      </ul>
-    </header>
-
-    <div id="main-content">
-
-      <img id="meg-pic" src="../imgs/mscropped.png">
-      <div id="text-box">
-        <h1 id="name">Meg<br>Sandman</h1>
-        <p id="about-me">Hi there, I'm Meg. I'm diving into the crazy new world of web development at Dev Bootcamp and getting my hands dirty with Ruby, HTML, CSS, and JavaScript. Previously worked on market strategy @HotelTonight. I love food, travel, tech, and all things athletic/outdoors.</p>
+  <body id="top">
+    <header id="home">
+      <div class="sm-bg">
+        <div class="container">
+          <ul class="nav-list alignright">
+            <li><a href="https://github.com/megsandman" target="blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+            <li><a href="https://twitter.com/megsandman" target="blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/profile/view?id=13801071&trk=nav_responsive_tab_profile" target="blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+            <li><a href="http://instagram.com/megsandman" target="blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center inner">
+              <div class="fade-box">
+                  <h1 class="animated fadeInDown">MEG<span>SANDMAN</span></h1>
+                  <p class="animated fadeInUp delay-05s">Web developer.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="intro text-center section-padding" id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h1 class="arrow">A little about me</h1>
+            <p>Hi there, I'm Meg. I love to learn and I love to code. I recently graduated from Dev Bootcamp, where I invested over 1000 hours learning how to code and in the process, learning how to learn. I gained experience in Ruby on Rails, JavaScript, HTML5 and CSS, AngularJS, Test Driven Development with RSpec and Jasmine, Git, and Agile development processes. I previously worked on market strategy @HotelTonight and love food, travel, tech, and all things athletic/outdoors.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="features text-center section-padding" id="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Portfolio</h1>
+            <div class="features-wrapper">
+              <div class="col-md-4">
+                <div class="icon">
+                  <i class="fa fa-laptop shadow"></i>
+                </div>
+                <h2>Bumble</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus.</p>
+              </div>
+              <div class="col-md-4 delay-05s">
+                <div class="icon">
+                  <i class="fa fa-code shadow"></i>
+                </div>
+                <h2>Chefboard</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus.</p>
+              </div>
+              <div class="col-md-4 delay-1s">
+                <div class="icon">
+                  <i class="fa fa-heart shadow"></i>
+                </div>
+                <h2>Hike Mapper</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a lorem quis neque interdum consequat ut sed sem. Duis quis tempor nunc. Interdum et malesuada fames ac ante ipsum
+                primis in faucibus.</p>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section class="portfolio text-center section-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+            <h1 class="arrow">Portfolio</h1>
+          <div id="portfolioSlider">
+            <ul class="slides">
+              <li>
+                <div class="col-md-4 wp4">
 
-    <div id="footer">
-      <h2>  Find me elsewhere:</h2>
-      <nav id="social-buttons">
-        <ul>
-         <li><a href="https://twitter.com/megsandman" target="_blank"><img class="social-icon" src="../imgs/gray-social-media-icons/48x48/twitter-48.png"></a></li>
-          <li><a href="https://www.linkedin.com/in/megsandman" target="_blank"><img class="social-icon" src="../imgs/gray-social-media-icons/48x48/linkedin-48.png"></a></li>
-          <li><a href="https://www.facebook.com/megsandman" target="_blank"><img class="social-icon" src="../imgs/gray-social-media-icons/48x48/facebook-48.png"></a></li>
-        </ul>
-      </nav>
-    </div>
-
-  </body>
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="images/chefboard.png" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="https://chefboard.herokuapp.com" class="expand" target="blank"><i class="fa fa-search"></i><br>View More</a>
+                        <a class="close-overlay hidden">x</a>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Chefboard</h2>
+                    <p><!--  I pitched Chefboard as a final project idea at Dev Bootcamp and was chosen by my peers to lead the week-long project.  --><a href="https://chefboard.herokuapp.com" target="blank">Chefboard</a> allows users to collect recipes from around the web and store them in place that is visually rich and easy to search. In addition to the web app, which is <a href="https://github.com/megsandman/dbc-final-project" target="_blank">built in Rails and AngularJS</a>, we also built a <a href="https://chrome.google.com/webstore/detail/chefboard/ofhfgnaelacnnjjellgcecfeemfppljo/related" target="_blank">Chrome extension</a> to allow users to more easily add recipes to their board.</p>
+                </div>
+                <div class="col-md-4 wp4 delay-05s">
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="images/bumble.png" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="https://bumble.herokuapp.com" class="expand" target="blank"><i class="fa fa-search"></i><br>View More</a>
+                        <a class="close-overlay hidden">x</a>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Bumble</h2>
+                  <p><a href="https://bumble.herokuapp.com" target="_blank">Bumble</a> aggregates styles from across the web, allowing users to 'like' or 'pass' on items and aggregating liked items in a wishlish. The app utilizes the Amazon API and is<a href="https://github.com/megsandman/bumble" target="_blank"> built using Sinatra, Ruby, JavaScript, and JQuery</a>. </p>
+                </div>
+                <div class="col-md-4 wp4 delay-1s">
+                  <div class="overlay-effect effects clearfix">
+                    <div class="img">
+                      <img src="images/tweveryone.png" alt="Portfolio Item">
+                      <div class="overlay">
+                        <a href="http://peanutbutternsam.github.io/portfolio/twooter/index.html" target="_blank" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                        <a class="close-overlay hidden">x</a>
+                      </div>
+                    </div>
+                  </div>
+                  <h2>Tweveryone</h2>
+                  <p><a href="http://peanutbutternsam.github.io/portfolio/twooter/index.html" target="_blank">Tweveryone</a> is an app that allows DBC students to submit anonnymous tweets that are then broadcast on the @OverheardatDBC Twitter account. Tweets are stored in a Firebase database, and the app is <a href="https://github.com/megsandman/twitter-api-and-databases/tree/master/twitter" target="_blank">built on a Ruby backendand JavaScript frontend.</a></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dark-bg text-center section-padding contact-wrap" id="contact">
+      <!-- <a href="#top" class="up-btn"><i class="fa fa-chevron-up"></i></a> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="arrow">Drop me a line</h1>
+          </div>
+        </div>
+        <div class="row contact-details">
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-map-marker"></i><span>Location</span></h2>
+              <p>San Francisco, CA</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+              <p>+650.823.0443</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="light-box box-hover">
+              <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+              <p><a href="#">margaret.sandman@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/modernizr.js"></script>
+ </body>
 </html>
