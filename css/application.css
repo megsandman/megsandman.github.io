@@ -129,7 +129,42 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
 
+/* ==========================================================================
+CTA
+========================================================================== */
+.ignite-cta {
+  background-color: #242830;
+  padding: 35px 0 25px;
+}
 
+.ignite-btn {
+  display: inline-block;
+  padding: 15px 40px 15px;
+  margin-bottom: 25px;
+  color: #fff;
+  border: solid 1px #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.skills-text-box {
+  color: #fff;
+  text-align: left;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  line-height: 300%
+}
+
+.skills-headers {
+font-size: 1.5em;
+}
 /*******************************************/
  /*CONTACT*/
 /******************************************/
